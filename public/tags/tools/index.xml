@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tools on Ampretia:Dev</title>
+    <link>http://ampretia.co.uk/tags/tools/</link>
+    <description>Recent content in Tools on Ampretia:Dev</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Fri, 08 Jun 2018 15:11:05 +0000</lastBuildDate><atom:link href="http://ampretia.co.uk/tags/tools/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Make multi-persona demos fun and interactive!</title>
+      <link>http://ampretia.co.uk/post/2018-06-08-make-multi-persona-demos-fun-and-interactive/</link>
+      <pubDate>Fri, 08 Jun 2018 15:11:05 +0000</pubDate>
+      
+      <guid>http://ampretia.co.uk/post/2018-06-08-make-multi-persona-demos-fun-and-interactive/</guid>
+      <description>Last week an idea occurred to me - we have several demos that can be shown at conferences to customers etc. But a central feature is there have multiple web apps (each can shown in one tab of a browser). How could it be possible to make the transition from one persona to another more obvious - and interactive??
+Demo-hats was born!
+Here&amp;rsquo;s the readme from the git repo.
+ Why would I use this?</description>
+    </item>
+    
+  </channel>
+</rss>

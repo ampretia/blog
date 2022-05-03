@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hyperledger-fabric on Ampretia:Dev</title>
+    <link>http://ampretia.co.uk/tags/hyperledger-fabric/</link>
+    <description>Recent content in hyperledger-fabric on Ampretia:Dev</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Wed, 31 Jul 2019 15:13:52 +0000</lastBuildDate><atom:link href="http://ampretia.co.uk/tags/hyperledger-fabric/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Early Access Coffee on the Blockchain</title>
+      <link>http://ampretia.co.uk/post/2019-07-31-201/</link>
+      <pubDate>Wed, 31 Jul 2019 15:13:52 +0000</pubDate>
+      
+      <guid>http://ampretia.co.uk/post/2019-07-31-201/</guid>
+      <description>Supply chains are one great usecase for Blockchain and DLT; tracing coffee beans to be able to assert the provence of their origin is just one example.
+It&amp;rsquo;s also a very bad pun to bridge to Java (the language).
+Being a long time Java Developer (Java 1.1.3 anybody?) I&amp;rsquo;m pleased to be able to write this short guide to using Java with the Fabric Smart Contract programming model. The updated programming model was first delivered within Hyperledger Fabric in Node.</description>
+    </item>
+    
+  </channel>
+</rss>

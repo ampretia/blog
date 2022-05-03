@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Node on Ampretia:Dev</title>
+    <link>http://ampretia.co.uk/tags/node/</link>
+    <description>Recent content in Node on Ampretia:Dev</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Fri, 08 Jun 2018 15:11:05 +0000</lastBuildDate><atom:link href="http://ampretia.co.uk/tags/node/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Make multi-persona demos fun and interactive!</title>
+      <link>http://ampretia.co.uk/post/2018-06-08-make-multi-persona-demos-fun-and-interactive/</link>
+      <pubDate>Fri, 08 Jun 2018 15:11:05 +0000</pubDate>
+      
+      <guid>http://ampretia.co.uk/post/2018-06-08-make-multi-persona-demos-fun-and-interactive/</guid>
+      <description>Last week an idea occurred to me - we have several demos that can be shown at conferences to customers etc. But a central feature is there have multiple web apps (each can shown in one tab of a browser). How could it be possible to make the transition from one persona to another more obvious - and interactive??
+Demo-hats was born!
+Here&amp;rsquo;s the readme from the git repo.
+ Why would I use this?</description>
+    </item>
+    
+    <item>
+      <title>“Tell me and I forget, teach me and I may remember, involve me and I learn.”</title>
+      <link>http://ampretia.co.uk/post/2017-06-28-tell-me-and-i-forget-teach-me-and-i-may-remember-involve-me-and-i-learn/</link>
+      <pubDate>Wed, 28 Jun 2017 10:54:44 +0000</pubDate>
+      
+      <guid>http://ampretia.co.uk/post/2017-06-28-tell-me-and-i-forget-teach-me-and-i-may-remember-involve-me-and-i-learn/</guid>
+      <description>“Tell me and I forget, teach me and I may remember, involve me and I learn.”
+Benjamin_Franklin
+ Often we do a &amp;lsquo;group QA&amp;rsquo; session to validate the quality of Hyperledger Composer; we have QA scripts that we follow but also this gives the opportunity do some freestyle testing. This gives the opportunity to use the code for real, and also allows people to learn about parts of the product they haven&amp;rsquo;t worked on recently.</description>
+    </item>
+    
+  </channel>
+</rss>

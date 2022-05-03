@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>logging on Ampretia:Dev</title>
+    <link>http://ampretia.co.uk/tags/logging/</link>
+    <description>Recent content in logging on Ampretia:Dev</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Fri, 08 Jun 2018 14:14:06 +0000</lastBuildDate><atom:link href="http://ampretia.co.uk/tags/logging/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hyperledger Composer &amp;#8211; Logging</title>
+      <link>http://ampretia.co.uk/post/2018-06-08-hyperledger-composer-logging/</link>
+      <pubDate>Fri, 08 Jun 2018 14:14:06 +0000</pubDate>
+      
+      <guid>http://ampretia.co.uk/post/2018-06-08-hyperledger-composer-logging/</guid>
+      <description>Hyperledger Composer - Logging Many years ago there was an insect that caught in a relay. Time has moved on, but the successor to that insect still can make itself known! Logging though is more than about just finding the diagnostics to help squash the specific code bugs. It can be used to see operational performance issues, spot configuration mistakes, and gaining confidence in how the code is working.
+How does Hyperledger Composer go about it&amp;rsquo;s logging then?</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>memory on Ampretia:Dev</title>
+    <link>http://ampretia.co.uk/tags/memory/</link>
+    <description>Recent content in memory on Ampretia:Dev</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Thu, 18 Apr 2019 15:52:02 +0000</lastBuildDate><atom:link href="http://ampretia.co.uk/tags/memory/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Oh git&amp;#8230;</title>
+      <link>http://ampretia.co.uk/post/2019-04-18-oh-git/</link>
+      <pubDate>Thu, 18 Apr 2019 15:52:02 +0000</pubDate>
+      
+      <guid>http://ampretia.co.uk/post/2019-04-18-oh-git/</guid>
+      <description>So this post is sort of just my list of useful git things - partly to save me from having to remember everything.
+ Best introduction and workflow care of @jtonline
+ All the files that you have changed in this commit
+&amp;lt;pre class=&amp;#34;EnlighterJSRAW&amp;#34; data-enlighter-group=&amp;#34;&amp;#34; data-enlighter-highlight=&amp;#34;&amp;#34; data-enlighter-language=&amp;#34;shell&amp;#34; data-enlighter-linenumbers=&amp;#34;&amp;#34; data-enlighter-lineoffset=&amp;#34;&amp;#34; data-enlighter-theme=&amp;#34;&amp;#34; data-enlighter-title=&amp;#34;&amp;#34;&amp;gt;git diff-tree --name-only -r HEAD~1..HEAD </description>
+    </item>
+    
+  </channel>
+</rss>
