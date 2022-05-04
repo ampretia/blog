@@ -2,10 +2,8 @@
 id: 64
 title: 'Getting outside-in with docker-compose[r] networks'
 date: '2017-11-11T18:10:59+00:00'
-author: calanais
 layout: post
-guid: 'http://proterra.me.uk/nx01/programming/?p=64'
-permalink: /2017/11/11/getting-outside-in-with-docker-composer-networks/
+summary: Networking with Docker can be tricky especially with regard to DNS and domain names. 
 tags:
     - composer
     - docker
@@ -14,6 +12,8 @@ tags:
     - hyperledger
     - neworking
 ---
+
+EDIT: an old post, but I think the concepts are still valid. 
 
 I had several docker containers spun up, all happily talking to each other on their own network. All happy for me to talk to them from the host Ubuntu system as well. Slight issue of when a configuration is exported from one of the docker containers, it was referring to the others by the domain it knew, `example.com` - not so great to use it from the host that knew it via localhost.
 

@@ -2,10 +2,9 @@
 id: 107
 title: 'Make multi-persona demos fun and interactive!'
 date: '2018-06-08T15:11:05+00:00'
-author: calanais
+slug: demohats
+summary: We have several demos that can be shown at conferences to customers etc. But a central feature is there have multiple web apps each driven by a different persona. How could it be possible to make the transition from one persona to another more obvious - and interactive??
 layout: post
-guid: 'http://proterra.me.uk/nx01/programming/?p=107'
-permalink: /2018/06/08/make-multi-persona-demos-fun-and-interactive/
 tags:
     - Node
     - Tools

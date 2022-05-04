@@ -2,15 +2,14 @@
 id: 59
 title: '“Tell me and I forget, teach me and I may remember, involve me and I learn.”'
 date: '2017-06-28T10:54:44+00:00'
-author: calanais
 layout: post
-guid: 'http://proterra.me.uk/nx01/programming/?p=59'
-permalink: /2017/06/28/tell-me-and-i-forget-teach-me-and-i-may-remember-involve-me-and-i-learn/
+summary: In order to properly develop software you need to also use the software your build.
 tags:
     - blockchain
-    - hyperledger-composer
-    - Node
 ---
+
+EDIT: an old post now, but the lession is still very valid. 
+
 
 > “Tell me and I forget, teach me and I may remember, involve me and I learn.”  
 >  Benjamin\_Franklin

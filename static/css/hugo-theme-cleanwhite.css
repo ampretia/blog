@@ -453,7 +453,8 @@ pre code{
 }
 .intro-header .post-heading .subheading,.intro-header .post-heading .meta{
     line-height:1.1;
-    display:block
+    display:block;
+    letter-spacing: 0px;
 }
 .intro-header .post-heading .meta .a{
     color: #404040
@@ -485,7 +486,8 @@ pre code{
         font-size:30px
     }
     .intro-header .post-heading .meta{
-        font-size:20px
+        font-size:20px;
+        letter-spacing:0px;
     }
 }
 .post-preview>a{

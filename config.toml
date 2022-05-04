@@ -31,7 +31,7 @@ home = ["HTML", "RSS"]
 
 
   # Sidebar settings
-  sidebar_about_description = "IBM Software Engineer, Photographer, Full Stack Geek, Professional Follower of Rabbit Holes, Human. Views are my own."
+  sidebar_about_description = "Matthew White. IBM Software Engineer, Photographer, Full Stack Geek, Professional Follower of Rabbit Holes, Human. Views are my own."
   sidebar_avatar = "img/wall-e avatar.jpg"      # use absolute URL, seeing it's used in both `/` and `/about/`
 
   featured_tags = true 
