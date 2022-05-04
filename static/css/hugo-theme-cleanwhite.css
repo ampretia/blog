@@ -70,7 +70,7 @@ body{
     overflow-x:hidden
 }
 p{
-    margin:30px 0
+    margin:25px 0
 }
 h1,h2,h3,h4,h5,h6{
     font-family:-apple-system,"Lato",sans-serif,"Source Sans Pro","Helvetica Neue",Arial;
@@ -632,6 +632,7 @@ form .row:first-child .floating-label-form-group{
     border-top:1px solid #eee
 }
 .btn{
+    display: inline-block;
     font-family:-apple-system,"Lato",sans-serif,"Source Sans Pro","Helvetica Neue",Arial;
     line-height:1.7;
     /* text-transform:uppercase; */
@@ -639,8 +640,8 @@ form .row:first-child .floating-label-form-group{
     /* font-weight:800; */
     letter-spacing:1px;
     border-radius:0;
-    border: 0px;
-    padding:15px 25px;
+    border: 1px;
+    padding:6px;
 }
 .btn-lg{
     font-size:17px;
@@ -648,7 +649,7 @@ form .row:first-child .floating-label-form-group{
 }
 .btn-default:hover,.btn-default:focus{
     background-color:#009688;
-    border:1px solid #009688;
+    /* border:1px solid #009688; */
     color:#fff
 }
 .btn-default {
@@ -914,7 +915,8 @@ body{
     flex-direction:column
 }
 .read-more {
-    margin: 0 0 0px;
+    margin-top: 25px;
+    margin-bottom: 0px
 }
 .page-fullscreen footer{
     position:absolute;
