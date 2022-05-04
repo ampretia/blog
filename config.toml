@@ -104,6 +104,9 @@ home = ["HTML", "RSS"]
   title =  "ABOUT🔗"
   href =  "https://calanais.me.uk/"
 
+[permalinks]
+  posts = '/:year/:month/:title/'
+
 [markup]
   [markup.tableOfContents]
     endLevel = 2

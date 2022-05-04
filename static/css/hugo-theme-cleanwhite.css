@@ -63,7 +63,7 @@
     margin-right:-15px
 }
 body{
-    font-family:-apple-system,"Helvetica Neue",Arial,"PingFang SC","Hiragino Sans GB",STHeiti,"Microsoft YaHei","Microsoft JhengHei","Source Han Sans SC","Noto Sans CJK SC","Source Han Sans CN","Noto Sans SC","Source Han Sans TC","Noto Sans CJK TC","WenQuanYi Micro Hei",SimSun,sans-serif;
+    font-family:-apple-system,"Lato",sans-serif,"Source Sans Pro","Helvetica Neue",Arial;
     line-height:1.7;
     font-size:17px;
     color:#404040;
@@ -73,7 +73,7 @@ p{
     margin:30px 0
 }
 h1,h2,h3,h4,h5,h6{
-    font-family:-apple-system,"Helvetica Neue",Arial,"PingFang SC","Hiragino Sans GB",STHeiti,"Microsoft YaHei","Microsoft JhengHei","Source Han Sans SC","Noto Sans CJK SC","Source Han Sans CN","Noto Sans SC","Source Han Sans TC","Noto Sans CJK TC","WenQuanYi Micro Hei",SimSun,sans-serif;
+    font-family:-apple-system,"Lato",sans-serif,"Source Sans Pro","Helvetica Neue",Arial;
     line-height:1.7;
     line-height:1.1;
     font-weight:700
@@ -250,7 +250,7 @@ pre code{
     left:0;
     width:100%;
     z-index:3;
-    font-family:-apple-system,"Helvetica Neue",Arial,"PingFang SC","Hiragino Sans GB",STHeiti,"Microsoft YaHei","Microsoft JhengHei","Source Han Sans SC","Noto Sans CJK SC","Source Han Sans CN","Noto Sans SC","Source Han Sans TC","Noto Sans CJK TC","WenQuanYi Micro Hei",SimSun,sans-serif;
+    font-family:-apple-system,"Lato",sans-serif,"Source Sans Pro","Helvetica Neue",Arial;
     line-height:1.7
 }
 .navbar-custom .navbar-brand{
@@ -418,6 +418,11 @@ pre code{
 .intro-header .site-heading{
     padding:95px 0 70px
 }
+
+.intro-header .tags {
+    letter-spacing:0px;
+}
+
 @media only screen and (min-width:768px){
     .intro-header .site-heading{
         padding:150px 0
@@ -431,7 +436,7 @@ pre code{
     font-size:50px
 }
 .intro-header .site-heading .subheading,.intro-header .page-heading .subheading{
-    font-family:-apple-system,"Helvetica Neue",Arial,"PingFang SC","Hiragino Sans GB",STHeiti,"Microsoft YaHei","Microsoft JhengHei","Source Han Sans SC","Noto Sans CJK SC","Source Han Sans CN","Noto Sans SC","Source Han Sans TC","Noto Sans CJK TC","WenQuanYi Micro Hei",SimSun,sans-serif;
+    font-family:-apple-system,"Lato",sans-serif,"Source Sans Pro","Helvetica Neue",Arial;
     line-height:1.7;
     font-size:18px;
     line-height:1.1;
@@ -457,7 +462,7 @@ pre code{
 }
 
 .intro-header .post-heading .subheading{
-    font-family:-apple-system,"Helvetica Neue",Arial,"PingFang SC","Hiragino Sans GB",STHeiti,"Microsoft YaHei","Microsoft JhengHei","Source Han Sans SC","Noto Sans CJK SC","Source Han Sans CN","Noto Sans SC","Source Han Sans TC","Noto Sans CJK TC","WenQuanYi Micro Hei",SimSun,sans-serif;
+    font-family:-apple-system,"Lato",sans-serif,"Source Sans Pro","Helvetica Neue",Arial;
     line-height:1.7;
     font-size:17px;
     line-height:1.4;
@@ -506,11 +511,11 @@ pre code{
     margin-bottom:10px
 }
 .post-preview>.post-meta>a, .post-preview>.post-meta{
-    font-family:Lora,'Times New Roman',serif;
+    /* font-family:Lora,'Times New Roman',serif; */
     color:gray;
-    font-size:17px;
-    font-style:italic;
-    margin-top:0
+    font-size:15px;
+    font-style:italic; 
+    margin-top:5px
 }
 
 .post-preview>.post-meta>a:hover,.post-preview>.post-meta>a:focus{
@@ -531,16 +536,16 @@ pre code{
     }
 }
 .post-content-preview{
-    font-size:13px;
-    font-style:italic;
-    color:#a3a3a3
+    font-size:18px;
+    /* font-style:italic; */
+    color:#505050
 }
-.post-content-preview:hover{
+/* .post-content-preview:hover{
     color:#009688
-}
+} */
 @media only screen and (min-width:768px){
     .post-content-preview{
-        font-size:15px
+        font-size:18px
     }
 }
 .section-heading{
@@ -627,14 +632,15 @@ form .row:first-child .floating-label-form-group{
     border-top:1px solid #eee
 }
 .btn{
-    font-family:-apple-system,"Helvetica Neue",Arial,"PingFang SC","Hiragino Sans GB",STHeiti,"Microsoft YaHei","Microsoft JhengHei","Source Han Sans SC","Noto Sans CJK SC","Source Han Sans CN","Noto Sans SC","Source Han Sans TC","Noto Sans CJK TC","WenQuanYi Micro Hei",SimSun,sans-serif;
+    font-family:-apple-system,"Lato",sans-serif,"Source Sans Pro","Helvetica Neue",Arial;
     line-height:1.7;
-    text-transform:uppercase;
+    /* text-transform:uppercase; */
     font-size:14px;
-    font-weight:800;
+    /* font-weight:800; */
     letter-spacing:1px;
     border-radius:0;
-    padding:15px 25px
+    border: 0px;
+    padding:15px 25px;
 }
 .btn-lg{
     font-size:17px;
@@ -645,13 +651,22 @@ form .row:first-child .floating-label-form-group{
     border:1px solid #009688;
     color:#fff
 }
+.btn-default {
+    color: #212121;
+    /* border-bottom: 1px solid #009688; */
+    box-sizing:border-box
+}
+hr {
+    border-top:1px solid #009688;
+    margin-top: 0px;
+}
 .pager{
     margin:20px 0 0!important;
     /*padding:0!important*/
     padding:0 0 20px 0
 }
 .pager li>a,.pager li>span{
-    font-family:-apple-system,"Helvetica Neue",Arial,"PingFang SC","Hiragino Sans GB",STHeiti,"Microsoft YaHei","Microsoft JhengHei","Source Han Sans SC","Noto Sans CJK SC","Source Han Sans CN","Noto Sans SC","Source Han Sans TC","Noto Sans CJK TC","WenQuanYi Micro Hei",SimSun,sans-serif;
+    font-family:-apple-system,"Lato",sans-serif,"Source Sans Pro","Helvetica Neue",Arial;
     line-height:1.7;
     text-transform:uppercase;
     font-size:13px;
@@ -780,7 +795,7 @@ body{
 }
 .one-tag-list .tag-text{
     font-weight:200;
-    font-family:-apple-system,"Helvetica Neue",Arial,"PingFang SC","Hiragino Sans GB",STHeiti,"Microsoft YaHei","Microsoft JhengHei","Source Han Sans SC","Noto Sans CJK SC","Source Han Sans CN","Noto Sans SC","Source Han Sans TC","Noto Sans CJK TC","WenQuanYi Micro Hei",SimSun,sans-serif;
+    font-family:-apple-system,"Lato",sans-serif,"Source Sans Pro","Helvetica Neue",Arial;
     line-height:1.7
 }
 .one-tag-list .post-preview{
@@ -897,6 +912,9 @@ body{
     align-items:center;
     justify-content:center;
     flex-direction:column
+}
+.read-more {
+    margin: 0 0 0px;
 }
 .page-fullscreen footer{
     position:absolute;

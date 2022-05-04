@@ -10,32 +10,37 @@
             {{ . }}
         </h3>
 	{{ end }}
-        <div class="post-content-preview">
-	{{ with .Description }}
-            {{ . }}
-        {{ else }}
-            {{ .Summary}}
-       {{ end }}
-        </div>
     </a>
     <p class="post-meta">
-    {{ if .Params.metadata }}
-        {{ range $index, $element := .Params.metadata }}
-            {{ if .link }}
-                <a href="{{ .link }}">{{ .text }}</a>
-            {{ else }}
-                {{ .text }}
+        {{ if .Params.metadata }}
+            {{ range $index, $element := .Params.metadata }}
+                {{ if .link }}
+                    <a href="{{ .link }}">{{ .text }}</a>
+                {{ else }}
+                    {{ .text }}
+                {{ end }}
+            {{ end }}
+        {{ else }}
+            {{ .Date.Format "Monday, January 2, 2006" }}
+            <!-- Don't show "Last Modified on" if update happened on the same day. -->
+            {{ if (and (not .Lastmod.IsZero) (not (eq (dateFormat "2006-01-02" .Lastmod) (dateFormat "2006-01-02" .Date)))) }}
+                <br>Last Modified on {{ dateFormat "Monday, January 2, 2006" .Params.LastMod }} 
             {{ end }}
         {{ end }}
-    {{ else }}
-        {{ .Date.Format "Monday, January 2, 2006" }}
-        <!-- Don't show "Last Modified on" if update happened on the same day. -->
-        {{ if (and (not .Lastmod.IsZero) (not (eq (dateFormat "2006-01-02" .Lastmod) (dateFormat "2006-01-02" .Date)))) }}
-            <br>Last Modified on {{ dateFormat "Monday, January 2, 2006" .Params.LastMod }} 
-        {{ end }}
-    {{ end }}
-    </p>
+        </p>
 
+
+    <div class="post-content-preview">
+        {{ with .Description }}
+                {{ . }}
+            {{ else }}
+                {{ .Summary}}
+           {{ end }}
+    </div>
+    <p class="read-more">
+        <a  href="https://proterra.me.uk/nx01/programming/2020/07/08/238/"><span class="btn btn-default">Read More...</span></a>
+    </p>
+    <hr>
 </div>
-<hr>
+
 {{ end }}
