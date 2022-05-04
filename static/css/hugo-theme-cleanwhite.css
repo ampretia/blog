@@ -7,8 +7,6 @@
     }
 }
 
-#009688
-
 @media (max-width:1700px){
     .sidebar-container .short-about .list-inline>li{
         font-size:13px
@@ -631,6 +629,7 @@ footer .copyright a:hover,footer .copyright a:focus{
 form .row:first-child .floating-label-form-group{
     border-top:1px solid #eee
 }
+
 .btn{
     display: inline-block;
     font-family:-apple-system,"Lato",sans-serif,"Source Sans Pro","Helvetica Neue",Arial;
@@ -675,7 +674,8 @@ hr {
     letter-spacing:1px;
     padding:10px;
     background-color:#fff;
-    border-radius:0
+    border-radius:0;
+    border: 0px
 }
 @media only screen and (min-width:768px){
     .pager li>a,.pager li>span{
@@ -689,7 +689,7 @@ hr {
 .pager li>a:hover,.pager li>a:focus{
     color:#fff;
     background-color:#009688;
-    border:1px solid #009688
+    /* border:1px solid #009688 */
 }
 .pager .disabled>a,.pager .disabled>a:hover,.pager .disabled>a:focus,.pager .disabled>span{
     color:gray;
