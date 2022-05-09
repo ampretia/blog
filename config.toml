@@ -113,3 +113,15 @@ home = ["HTML", "RSS"]
     startLevel = 1
   [markup.highlight]
     style = "swapoff"
+
+[params.giscus]
+  data_repo="ampretia/blog"
+  data_repo_id="R_kgDOHRQOhQ"
+  data_category="Announcements"
+  data_category_id="DIC_kwDOHRQOhc4CPAUr"
+  data_mapping="pathname"
+  data_reactions_enabled="1"
+  data_emit_metadata="0"
+  data_theme="light"
+  data_lang="en"
+  crossorigin="anonymous"
