@@ -14,7 +14,7 @@ home = ["HTML", "RSS"]
 
 [params]
   header_image = "img/Programming1600x400_a.jpg"
-  SEOTitle = "Ampretia:Dev Blog"
+  SEOTitle = "Ampretia:Dev Blog Matthew White"
   description = ""
   keyword = "Web, Kubernetes"
   slogan = "All Things Software Development"
