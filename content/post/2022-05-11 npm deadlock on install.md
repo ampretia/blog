@@ -6,7 +6,7 @@ summary: "Tracking down why npm install didn't install at all"
 tags:
     - npm
     - docker
-    - rabbit hole
+    - rabbit-hole
 ---
 
 A *Rabbit Hole* post showing a very odd problem, the process of tracking it down and the answer. Note that none of the technology listed was actually at fault, and no rabbits were harmed.

@@ -3,6 +3,7 @@ title: 'Moving from Wordpress to Static Sites'
 date: '2022-05-11'
 layout: post
 summary: How I moved this from Wordpress to a static site
+draft: true
 tags:
     - wordpress
     - hugo

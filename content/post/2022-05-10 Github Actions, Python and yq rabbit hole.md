@@ -2,6 +2,7 @@
 title: 'Github actions, Python and yq Rabbit Hole'
 date: '2022-05-10'
 layout: post
+draft: true
 summary: Solving the issue of mysterious version of yq
 tags:
     - yq
