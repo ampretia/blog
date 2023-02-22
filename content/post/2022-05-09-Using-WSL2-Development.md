@@ -1,0 +1,27 @@
+---
+title: 'Experience of running Hyperleder-Fabric in K8S'
+date: '2022-05-09'
+layout: post
+summary: Study-guide on runnning the Hyperledger Fabric in KIND in WSL2
+draft: true
+tags:
+    - wordpress
+    - hugo
+    - static-sites
+---
+
+
+Best guide for setting up Docker within WSL 2.  Especially the start-up script.
+
+Install Kind using the [Linux instructions](https://kind.sigs.k8s.io/docs/user/quick-start/) Typically I confgure `~/.local/bin` to on my path. And put all the binaries here, as below
+
+```
+COPY
+curl -Lo ./kind https://kind.sigs.k8s.io/dl/v0.12.0/kind-linux-amd64
+chmod +x ./kind
+mv ./kind ~/.local/bin
+```
+
+k9s - well worth learning an du
+
+
