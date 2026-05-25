@@ -25,7 +25,7 @@ Features:
 - Compact-ish design to screw into the shower feed
 - RP2040 as the micro-controller
 
-![](/showertimer/IMG_20240318_081910.jpg)
+![Completed self-powered shower timer device with water turbine generator and RP2040 microcontroller](/showertimer/IMG_20240318_081910.jpg)
 
 ## Generator
 
@@ -64,7 +64,7 @@ Note that the brass converter which is internally threaded to 1/2".  so this was
 
 The white outer casing a small plastic container from aquarium fish food; cleaned, label removed and cutdown. Glued with circuit inside. 
 
-![](/showertimer/IMG_20240318_081917.jpg)
+![Assembled shower timer showing brass converter, plastic white casing, and internal circuit board](/showertimer/IMG_20240318_081917.jpg)
 
 ## Software
 
@@ -83,8 +83,8 @@ Rather than `cargo run` which would to try and download the code to the XIAO, I 
 
 ## Does it work?
 
-![](/showertimer/IMG_20240318_082328.jpg)
-![](/showertimer/IMG_20240318_082603.jpg)
+![Shower timer display showing tricolor LED timing indicator during operation](/showertimer/IMG_20240318_082328.jpg)
+![Shower timer installation and operation showing LED indicator in active use](/showertimer/IMG_20240318_082603.jpg)
 
 Bascially Yes; does it reduce the shower time - well maybe it won't long term when the novelty wears off. 
 
