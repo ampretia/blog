@@ -1,7 +1,7 @@
 ---
 title: 'An Intuitive View of the Monty Hall Problem'
 date: '2026-05-24'
-summary: 'A simple, friction-free way to conceptualize why switching doors always works in your favor.'
+summary: 'A simple, friction-free way to conceptualize why switching doors always works in your favour.'
 slug: 'intuitive-monty-hall'
 layout: post
 tags:
@@ -26,7 +26,7 @@ Finally you've made it to the treasure room; a vast hall with gilded ceiling bat
 Finally, a simple choice: "I choose the middle."
 > A fine choice, but first let me show you one of the chests you did not choose.
 >
-On lifting the creaking lid, it is clear that only dust has even been in this chest.
+On lifting the creaking lid, it is clear that only dust has even been in this chest and certainly no hope.
 
 > But now adventurer we come to the last challenge and choice of your quest? Would you like to change your mind and chose the other chest?
 >
