@@ -1,0 +1,46 @@
+<!-- Related Posts Section -->
+{{ $currentPage := . }}
+{{ $related := slice }}
+{{ $currentTags := $currentPage.GetTerms "tags" }}
+
+{{ range .Site.Pages }}
+  {{ if and (ne .Permalink $currentPage.Permalink) (eq .Type "post") }}
+    {{ $hasCommonTag := false }}
+    {{ range (.GetTerms "tags") }}
+      {{ $pageTag := . }}
+      {{ range $currentTags }}
+        {{ if eq .Name $pageTag.Name }}
+          {{ $hasCommonTag = true }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+    {{ if $hasCommonTag }}
+      {{ $related = $related | append . }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{ if gt (len $related) 0 }}
+<div class="related-posts">
+  <h3 class="related-posts-title">Related Posts</h3>
+  <div class="related-posts-grid">
+    {{ range first 3 $related }}
+    <a href="{{ .RelPermalink }}" class="related-post-item">
+      <span class="related-post-item-date">
+        {{ .Date.Format "Jan 2, 2006" }}
+      </span>
+      <div class="related-post-item-title">
+        {{ .Title }}
+      </div>
+      <div class="related-post-item-excerpt">
+        {{ if .Params.subtitle }}
+          {{ .Params.subtitle }}
+        {{ else }}
+          {{ .Summary }}
+        {{ end }}
+      </div>
+    </a>
+    {{ end }}
+  </div>
+</div>
+{{ end }}

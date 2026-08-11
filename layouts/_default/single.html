@@ -58,7 +58,7 @@
 
             <!-- Post Container -->
             <div class="
-                col-lg-8 col-lg-offset-2
+                col-lg-9 col-lg-offset-1
                 col-md-10 col-md-offset-1
                 post-container">
 
@@ -91,6 +91,8 @@
                     </li>
                     {{ end }}
                 </ul>
+                {{ partial "related-posts.html" . }}
+
                 {{ partial "comments.html" . }}
             </div>
 
@@ -98,13 +100,14 @@
             {{ if not (eq (.Param "showtoc") false) }}
             <div class="
                 col-lg-2 col-lg-offset-0
+                col-md-10 col-md-offset-1
                 visible-lg-block
                 sidebar-container
                 catalog-container">
                 <div class="side-catalog">
                     <hr class="hidden-sm hidden-xs">
                     <h5>
-                        <a class="catalog-toggle" href="#">CATALOG</a>
+                        <a class="catalog-toggle" href="#">CONTENTS</a>
                     </h5>
                     <ul class="catalog-body"></ul>
                 </div>
@@ -113,7 +116,7 @@
 
             <!-- Sidebar Container -->
             <div class="
-                col-lg-8 col-lg-offset-2
+                col-lg-9 col-lg-offset-1
                 col-md-10 col-md-offset-1
                 sidebar-container">
 

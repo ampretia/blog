@@ -1,46 +1,155 @@
-<!-- post list -->
-{{ range $index, $element := $.Paginator.Pages }}
-<div class="post-preview">
-    <a href="{{ .Permalink }}">
-        <h2 class="post-title">
-            {{ .Title }}
-        </h2>
-	{{with .Params.subtitle }}
-        <h3 class="post-subtitle">
-            {{ . }}
-        </h3>
-	{{ end }}
-    </a>
-    <p class="post-meta">
-        {{ if .Params.metadata }}
-            {{ range $index, $element := .Params.metadata }}
-                {{ if .link }}
-                    <a href="{{ .link }}">{{ .text }}</a>
-                {{ else }}
-                    {{ .text }}
-                {{ end }}
-            {{ end }}
-        {{ else }}
-            {{ .Date.Format "Monday, January 2, 2006" }}
-            <!-- Don't show "Last Modified on" if update happened on the same day. -->
-            {{ if (and (not .Lastmod.IsZero) (not (eq (dateFormat "2006-01-02" .Lastmod) (dateFormat "2006-01-02" .Date)))) }}
-                <br>Last Modified on {{ dateFormat "Monday, January 2, 2006" .Params.LastMod }} 
-            {{ end }}
-        {{ end }}
-        </p>
+<!-- Post Grid - Card Layout -->
+{{ $paginator := $.Paginator }}
+{{ $pages := $paginator.Pages }}
 
-
-    <div class="post-content-preview">
-        {{ with .Description }}
-                {{ . }}
-            {{ else }}
-                {{ .Summary}}
-           {{ end }}
+<!-- Featured Post (First item on first page) -->
+{{ if and (eq $paginator.PageNumber 1) (gt (len $pages) 0) }}
+{{ $featured := index $pages 0 }}
+{{ $featuredCategory := index ($featured.GetTerms "categories") 0 }}
+<div class="featured-post-card" {{ if $featuredCategory }}data-category="{{ $featuredCategory.Name | lower }}"{{ end }}>
+  <!-- Featured Content -->
+  <div class="featured-post-content">
+    <span class="featured-post-label">Featured</span>
+    {{ if $featured.GetTerms "tags" }}
+    <div class="post-card-tags">
+      {{ range first 2 ($featured.GetTerms "tags") }}
+      <a href="{{ .RelPermalink }}" class="post-card-tag">{{ .LinkTitle }}</a>
+      {{ end }}
     </div>
-    <p class="read-more">
-        <a  href="{{ .Permalink }}"><span class="btn btn-default">Read More...</span></a>
+    {{ end }}
+    <h2 class="featured-post-title">
+      <a href="{{ $featured.Permalink }}">{{ $featured.Title }}</a>
+    </h2>
+    <p class="featured-post-intro">
+      {{ if $featured.Params.description }}
+        {{ $featured.Params.description }}
+      {{ else if $featured.Params.subtitle }}
+        {{ $featured.Params.subtitle }}
+      {{ else }}
+        {{ $featured.Summary }}
+      {{ end }}
     </p>
-    <hr>
+    <div class="featured-post-meta">
+      <span class="featured-post-date">
+        {{ if $featured.Params.metadata }}
+          {{ range $index, $element := $featured.Params.metadata }}
+            {{ if .link }}
+              <a href="{{ .link }}">{{ .text }}</a>
+            {{ else }}
+              {{ .text }}
+            {{ end }}
+          {{ end }}
+        {{ else }}
+          {{ $featured.Date.Format "Jan 2, 2006" }}
+        {{ end }}
+      </span>
+    </div>
+    <a href="{{ $featured.Permalink }}" class="featured-post-cta">Read Article</a>
+  </div>
 </div>
+{{ end }}
 
+<!-- Recent Posts Grid -->
+{{ if gt (len $pages) 1 }}
+<div class="post-grid">
+  {{ range first 6 (after 1 $pages) }}
+  {{ $category := index (.GetTerms "categories") 0 }}
+  <article class="post-card" {{ if $category }}data-category="{{ $category.Name | lower }}"{{ end }}>
+    <!-- Post Content -->
+    <div class="post-card-content">
+      <!-- Tags -->
+      {{ if .GetTerms "tags" }}
+      <div class="post-card-tags">
+        {{ range first 2 (.GetTerms "tags") }}
+        <a href="{{ .RelPermalink }}" class="post-card-tag">{{ .LinkTitle }}</a>
+        {{ end }}
+      </div>
+      {{ end }}
+
+      <!-- Title -->
+      <h3 class="post-card-title">
+        <a href="{{ .Permalink }}">{{ .Title }}</a>
+      </h3>
+
+      <!-- Intro -->
+      <p class="post-card-excerpt">
+        {{ if .Params.description }}
+          {{ .Params.description }}
+        {{ else if .Params.subtitle }}
+          {{ .Params.subtitle }}
+        {{ else }}
+          {{ .Summary }}
+        {{ end }}
+      </p>
+
+      <!-- Metadata -->
+      <div class="post-card-meta">
+        <span class="post-card-date">
+          {{ if .Params.metadata }}
+            {{ range $index, $element := .Params.metadata }}
+              {{ if .link }}
+                <a href="{{ .link }}">{{ .text }}</a>
+              {{ else }}
+                {{ .text }}
+              {{ end }}
+            {{ end }}
+          {{ else }}
+            {{ .Date.Format "Jan 2, 2006" }}
+          {{ end }}
+        </span>
+      </div>
+      <a href="{{ .Permalink }}" class="featured-post-cta">Read Article</a>
+    </div>
+  </article>
+  {{ end }}
+</div>
+{{ else }}
+<!-- Single Featured Post (no additional cards) -->
+<div class="post-grid single-column">
+  {{ range (after 1 $pages) }}
+  {{ $category := index (.GetTerms "categories") 0 }}
+  <article class="post-card" {{ if $category }}data-category="{{ $category.Name | lower }}"{{ end }}>
+    <div class="post-card-content">
+      {{ if .GetTerms "tags" }}
+      <div class="post-card-tags">
+        {{ range first 2 (.GetTerms "tags") }}
+        <a href="{{ .RelPermalink }}" class="post-card-tag">{{ .LinkTitle }}</a>
+        {{ end }}
+      </div>
+      {{ end }}
+
+      <h3 class="post-card-title">
+        <a href="{{ .Permalink }}">{{ .Title }}</a>
+      </h3>
+
+      <p class="post-card-excerpt">
+        {{ if .Params.description }}
+          {{ .Params.description }}
+        {{ else if .Params.subtitle }}
+          {{ .Params.subtitle }}
+        {{ else }}
+          {{ .Summary }}
+        {{ end }}
+      </p>
+
+      <div class="post-card-meta">
+        <span class="post-card-date">
+          {{ if .Params.metadata }}
+            {{ range $index, $element := .Params.metadata }}
+              {{ if .link }}
+                <a href="{{ .link }}">{{ .text }}</a>
+              {{ else }}
+                {{ .text }}
+              {{ end }}
+            {{ end }}
+          {{ else }}
+            {{ .Date.Format "Jan 2, 2006" }}
+          {{ end }}
+        </span>
+      </div>
+      <a href="{{ .Permalink }}" class="featured-post-cta">Read Article</a>
+    </div>
+  </article>
+  {{ end }}
+</div>
 {{ end }}
