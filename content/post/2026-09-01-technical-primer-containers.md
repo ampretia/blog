@@ -19,6 +19,14 @@ keywords:
     - primer
 series:
     - technical-primer
+# LinkedIn post text — edit this before setting linkedin_approved: true
+# Keep it short, plain, no jargon. One strong line from the post + a link.
+linkedin_post: |
+  A container is not a small VM. It's a regular Linux process that the kernel agrees to keep isolated.
+
+  New post: what Docker actually does, why namespaces and cgroups matter, and how an image becomes a running process — without the hand-waving.
+
+linkedin_approved: false
 ---
 
 # Technical Primer: Containers
