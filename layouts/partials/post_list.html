@@ -50,9 +50,12 @@
 {{ end }}
 
 <!-- Recent Posts Grid -->
-{{ if gt (len $pages) 1 }}
+<!-- Page 1 shows the first post as the featured card; later pages list every post -->
+{{ $cards := $pages }}
+{{ if eq $paginator.PageNumber 1 }}{{ $cards = after 1 $pages }}{{ end }}
+{{ if gt (len $cards) 0 }}
 <div class="post-grid">
-  {{ range first 6 (after 1 $pages) }}
+  {{ range $cards }}
   {{ $category := index (.GetTerms "categories") 0 }}
   <article class="post-card" {{ if $category }}data-category="{{ $category.Name | lower }}"{{ end }}>
     <!-- Post Content -->
