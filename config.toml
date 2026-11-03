@@ -6,8 +6,11 @@ title = 'Ampretia:Dev'
 disqusShortname = ""
 googleAnalytics = ""
 preserveTaxonomyNames = true
-paginate = 5 #frontpage pagination
 hasCJKLanguage = true
+
+# Frontpage pagination: one featured card plus six cards on page 1
+[pagination]
+  pagerSize = 7
 
 [outputs]
 home = ["HTML", "RSS"]
