@@ -140,6 +140,10 @@ That leaves the question of where the hints come from. There are four realistic 
 
 A central catalog holding the mapping, which each engine consults, seems to me the best of these. Catalogs such as the [Iceberg REST catalog](https://iceberg.apache.org/rest-catalog-spec/), [Hive Metastore](https://hive.apache.org/) and [Unity Catalog](https://www.unitycatalog.io/) show the shape of this.
 
+Put together, the flow looks like this:
+
+![Client sends a Substrait plan and session options to Flight SQL, which passes them to execution engines; the engines return Arrow record batches to the client with DoGet, while a central catalog supplies hints to the client and resolves names for the engines](/apache-flight-substrait/architecture.svg)
+
 ## Summary
 
 Flight and Substrait address complementary layers of the data stack:
